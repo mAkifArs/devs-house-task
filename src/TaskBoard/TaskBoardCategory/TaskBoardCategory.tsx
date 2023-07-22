@@ -4,7 +4,7 @@ import cx from 'classnames';
 
 import { TaskCategory } from '../../context/TaskProvider/TaskContext';
 import useTaskBoardCategory from './useTaskBoardCategory';
-import TaskBoardItem from './TaskBoardItem';
+import TaskBoardItem from '../TaskBoardItem';
 
 import styles from './TaskBoardCategory.module.scss';
 

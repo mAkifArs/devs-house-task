@@ -6,8 +6,33 @@ export default function TaskProvider({ children }: PropsWithChildren) {
     {
       id: 1,
       category: TaskCategory.Backlog,
-      content: 'selam',
+      content:
+        'Fix the padding issue with the modal view. It also effects the other views and other modals. Fix the flex layout fit a wrapper than the whole screen. (2h)',
       type: TaskType.Bug,
+      owner: 1,
+    },
+    {
+      id: 1,
+      category: TaskCategory.Backlog,
+      content:
+        'Fix the padding issue with the modal view. It also effects the other views and other modals. Fix the flex layout fit a wrapper than the whole screen. (2h)',
+      type: TaskType.Feature,
+      owner: 1,
+    },
+    {
+      id: 1,
+      category: TaskCategory.InProgress,
+      content:
+        'Fix the padding issue with the modal view. It also effects the other views and other modals. Fix the flex layout fit a wrapper than the whole screen. (2h)',
+      type: TaskType.Feature,
+      owner: 1,
+    },
+    {
+      id: 1,
+      category: TaskCategory.Done,
+      content:
+        'Fix the padding issue with the modal view. It also effects the other views and other modals. Fix the flex layout fit a wrapper than the whole screen. (2h)',
+      type: TaskType.Feature,
       owner: 1,
     },
   ]);
