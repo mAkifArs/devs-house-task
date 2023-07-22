@@ -1,0 +1,15 @@
+.text {
+  $colors: (
+    blue: #acadf9,
+    red: #e26e46,
+    green: #56b969,
+    gray: #9ea9b2,
+    dark: #000000,
+  );
+
+  @each $color, $value in $colors {
+    &--#{$color} {
+      color: $value;
+    }
+  }
+}

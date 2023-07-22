@@ -6,7 +6,7 @@ export enum TaskCategory {
   Done = 'Done',
 }
 
-enum TaskType {
+export enum TaskType {
   Bug = 'Bug',
   Feature = 'Feature',
   Refactor = 'Refactor',
@@ -17,7 +17,7 @@ export interface Task {
   category: TaskCategory;
   content: string;
   type: TaskType;
-  owner: string;
+  owner: number;
 }
 
 export interface TaskContextType {
