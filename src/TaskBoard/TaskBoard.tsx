@@ -5,13 +5,13 @@ import Text from '../ui/Text';
 
 import { TaskCategory } from '../context/TaskProvider/TaskContext';
 import TaskBoardCategory from './TaskBoardCategory';
-
+import TaskBoardHeader from './TaskBoardHeader';
 export default function TaskBoard() {
   const handleDragEnd = () => {};
 
   return (
     <Container fluid>
-      <div>hey</div>
+      <TaskBoardHeader />
       <Flex gap="md">
         <DragDropContext onDragEnd={handleDragEnd}>
           <TaskBoardCategory
