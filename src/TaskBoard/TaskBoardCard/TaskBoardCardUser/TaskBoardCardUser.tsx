@@ -1,23 +1,22 @@
-import styles from './TaskBoardCardUser.module.scss';
-import Text from '../../../ui/Text/Text';
-const user = {
-  id: 0,
-  name: 'Bill Gates',
-  bio: 'Chairman of Microsof',
-};
+import { Flex, Avatar } from '@mantine/core';
 
-export default function TaskBoardCardUser() {
+import Text from '../../../ui/Text/Text';
+import { User } from '../../../globalTypes';
+
+interface TaskBoardCardUserProps {
+  user: User;
+}
+
+export default function TaskBoardCardUser({ user }: TaskBoardCardUserProps) {
   return (
-    <div className={styles['main']}>
-      <div className={styles['imageDiv']}>
-        <img className={styles['image']} src="/assets/userImage.jpg" />
-      </div>
-      <div style={{}}>
+    <Flex gap="sm">
+      <Avatar src="/assets/userImage.jpg" size="md" radius="xl" alt="user avatar" />
+      <Flex direction="column">
         <Text weight={590}>{user.name}</Text>
         <Text size={12} color="gray" weight={400}>
           {user.bio}
         </Text>
-      </div>
-    </div>
+      </Flex>
+    </Flex>
   );
 }

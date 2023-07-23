@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "name": "Bill Gates",
+    "bio": "Chairman of Microsof"
+  },
+  {
+    "id": 1,
+    "name": "Elon Musk",
+    "bio": "CTO at Tesla"
+  },
+  {
+    "id": 2,
+    "name": "Jeff Bezos",
+    "bio": "CEO at Amazon"
+  }
+]
